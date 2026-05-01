@@ -347,8 +347,8 @@ $ helm install --wait --generate-name \
 >
 > For heterogeneous clusters with different GPU types, you can specify an
 > empty `P_GPU_ALIAS` environment variable for the sandbox device plugin:
-> `-    --set 'sandboxDevicePlugin.env[0].name=P_GPU_ALIAS' \`
-> `-    --set 'sandboxDevicePlugin.env[0].value=""' \`
+> `-    --set 'kataSandboxDevicePlugin.env[0].name=P_GPU_ALIAS' \`
+> `-    --set 'kataSandboxDevicePlugin.env[0].value=""' \`
 > This will cause the sandbox device plugin to create GPU model-specific
 > resource types (e.g., `nvidia.com/GH100_H100L_94GB`) instead of the
 > default `pgpu` type, which usually results in advertising a resource of
